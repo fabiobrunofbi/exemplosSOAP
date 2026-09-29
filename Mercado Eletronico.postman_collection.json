@@ -1,0 +1,70 @@
+{
+  "info": {
+    "_postman_id": "81a6747a-e132-4153-b56d-d77c7cf1b4ae",
+    "name": "Mercado Eletronico",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "26656187"
+  },
+  "item": [
+    {
+      "name": "https://api.me.com.br/MEBrokerWebService/MEBrokerWebService.asmx",
+      "protocolProfileBehavior": {
+        "disabledSystemHeaders": {
+          "content-type": true
+        }
+      },
+      "request": {
+        "auth": {
+          "type": "basic",
+          "basic": [
+            {
+              "key": "username",
+              "value": "AGROPALMACONNECT",
+              "type": "string"
+            },
+            {
+              "key": "password",
+              "value": "@Grop@Lm@2026",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "text/xml; charset=utf-8"
+          },
+          {
+            "key": "SOAPAction",
+            "value": "http://www.me.com.br/WebServices/getMessagePrePedido"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" \r\n                  xmlns:web=\"http://www.me.com.br/WebServices\">\r\n<soapenv:Header/>\r\n  <soapenv:Body>\r\n      <web:getMessagePrePedido>\r\n      <!--Optional:-->\r\n      <web:borgCode></web:borgCode>\r\n      </web:getMessagePrePedido>\r\n   </soapenv:Body>\r\n</soapenv:Envelope>",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.me.com.br/MEBrokerWebService/MEBrokerWebService.asmx",
+          "protocol": "https",
+          "host": [
+            "api",
+            "me",
+            "com",
+            "br"
+          ],
+          "path": [
+            "MEBrokerWebService",
+            "MEBrokerWebService.asmx"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

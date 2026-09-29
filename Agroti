@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="f06999dd-d543-490c-9da3-2e5ef466c40b" activeEnvironment="Default" name="Agroti" resourceRoot="" soapui-version="5.6.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="a417e1c0-0d1f-46dc-b4d8-fd586f77a9eb" wsaVersion="NONE" name="TBiosalc_WSServidorOleSoap" type="wsdl" bindingName="{BiosalcWSServiceOle}TBiosalc_WSServidorOleSoap" soapVersion="1_1" anonymous="optional" definition="http://taiv07/wsagro/Biosalc_WSServidorOle.asmx?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://taiv07/wsagro/Biosalc_WSServidorOle.asmx</con:endpoint></con:endpoints><con:operation id="fb9aeb75-9111-4e55-b9ae-8da4b99750b0" isOneWay="false" action="BiosalcWSServiceOle/fnc_XML_Wrapper" name="fnc_XML_Wrapper" bindingOperationName="fnc_XML_Wrapper" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="51800966-ca49-43f1-b550-08cef9273f39" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://taiv07/wsagro/Biosalc_WSServidorOle.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bios="BiosalcWSServiceOle">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <bios:fnc_XML_Wrapper>\r
+         <!--Optional:-->\r
+         <bios:strXML>
+               ?
+         </bios:strXML>\r
+      </bios:fnc_XML_Wrapper>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="BiosalcWSServiceOle/fnc_XML_Wrapper"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="ca4439f3-9792-4720-9c77-fdafa01d5a0b" wsaVersion="NONE" name="TBiosalc_WSServidorOleSoap12" type="wsdl" bindingName="{BiosalcWSServiceOle}TBiosalc_WSServidorOleSoap12" soapVersion="1_2" anonymous="optional" definition="http://taiv07/wsagro/Biosalc_WSServidorOle.asmx?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://taiv07/wsagro/Biosalc_WSServidorOle.asmx?wsdl"><con:part><con:url>http://taiv07/wsagro/Biosalc_WSServidorOle.asmx?wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="BiosalcWSServiceOle" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="BiosalcWSServiceOle" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="BiosalcWSServiceOle">
+      <s:element name="fnc_XML_Wrapper">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strXML" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fnc_XML_WrapperResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fnc_XML_WrapperResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="fnc_XML_WrapperSoapIn">
+    <wsdl:part name="parameters" element="tns:fnc_XML_Wrapper"/>
+  </wsdl:message>
+  <wsdl:message name="fnc_XML_WrapperSoapOut">
+    <wsdl:part name="parameters" element="tns:fnc_XML_WrapperResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="TBiosalc_WSServidorOleSoap">
+    <wsdl:operation name="fnc_XML_Wrapper">
+      <wsdl:input message="tns:fnc_XML_WrapperSoapIn"/>
+      <wsdl:output message="tns:fnc_XML_WrapperSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TBiosalc_WSServidorOleSoap" type="tns:TBiosalc_WSServidorOleSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="fnc_XML_Wrapper">
+      <soap:operation soapAction="BiosalcWSServiceOle/fnc_XML_Wrapper" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TBiosalc_WSServidorOleSoap12" type="tns:TBiosalc_WSServidorOleSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="fnc_XML_Wrapper">
+      <soap12:operation soapAction="BiosalcWSServiceOle/fnc_XML_Wrapper" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TBiosalc_WSServidorOle">
+    <wsdl:port name="TBiosalc_WSServidorOleSoap" binding="tns:TBiosalc_WSServidorOleSoap">
+      <soap:address location="http://taiv07/wsagro/Biosalc_WSServidorOle.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="TBiosalc_WSServidorOleSoap12" binding="tns:TBiosalc_WSServidorOleSoap12">
+      <soap12:address location="http://taiv07/wsagro/Biosalc_WSServidorOle.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://taiv07/wsagro/Biosalc_WSServidorOle.asmx</con:endpoint></con:endpoints><con:operation id="40774375-f4a3-41d3-8720-4fced57eb323" isOneWay="false" action="BiosalcWSServiceOle/fnc_XML_Wrapper" name="fnc_XML_Wrapper" bindingOperationName="fnc_XML_Wrapper" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0a6a0be4-0598-4dd3-9de6-2c6fb3e2332d" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://taiv07/wsagro/Biosalc_WSServidorOle.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:bios="BiosalcWSServiceOle">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <bios:fnc_XML_Wrapper>\r
+         <!--Optional:-->\r
+         <bios:strXML>?</bios:strXML>\r
+      </bios:fnc_XML_Wrapper>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="BiosalcWSServiceOle/TBiosalc_WSServidorOleSoap/fnc_XML_WrapperRequest"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

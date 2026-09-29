@@ -1,0 +1,49 @@
+# Visual Studio
+.vs/
+.vscode/
+bin/
+obj/
+
+# Build
+bin/
+obj/
+Debug/
+Release/
+
+# Rider
+.idea/
+
+# SSDT / SSIS
+*.dtproj.user
+*.database.dbmdl
+*.jfm
+*.dbmdl
+
+# Arquivos de usuário
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.log
+
+# Cache
+*.cache
+*.vsidx
+
+# NuGet
+packages/
+
+# Testes
+TestResults/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Publicação
+publish/
+*.pubxml.user

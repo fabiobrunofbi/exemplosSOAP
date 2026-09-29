@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="4693de3a-9368-416c-81f5-6277ab0608e3" activeEnvironment="Default" name="Astren" resourceRoot="" soapui-version="5.7.2" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="e7a34510-6fce-41f8-ac4b-6c51258661df" wsaVersion="NONE" name="ServiceAstreinSoap" type="wsdl" bindingName="{http://tempuri.org/}ServiceAstreinSoap" soapVersion="1_1" anonymous="optional" definition="https://aws.chmasterdata.com/integracao/agropalma/intretorno/ServiceAstrein.asmx?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://aws.chmasterdata.com/integracao/agropalma/intretorno/ServiceAstrein.asmx</con:endpoint></con:endpoints><con:operation id="326c9194-deea-4828-a7d1-7ff243e760fb" isOneWay="false" action="http://tempuri.org/EnviarItem" name="EnviarItem" bindingOperationName="EnviarItem" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1f14990c-af96-4c81-9cd0-6e17df5c0464" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://aws.chmasterdata.com/integracao/agropalma/intretorno/ServiceAstrein.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:EnviarItem>\r
+         <!--Optional:-->\r
+         <tem:dsItem>\r
+            <xs:schema>\r
+               <!--Ignoring type [{http://www.w3.org/2001/XMLSchema}schema]-->\r
+            </xs:schema>\r
+            <!--You may enter ANY elements at this point-->\r
+         </tem:dsItem>\r
+         <!--Optional:-->\r
+         <tem:usuario>?</tem:usuario>\r
+         <!--Optional:-->\r
+         <tem:senha>?</tem:senha>\r
+      </tem:EnviarItem>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/EnviarItem"/></con:call></con:operation><con:operation id="8c285474-f409-4fbe-b7ab-1dd28074d758" isOneWay="false" action="http://tempuri.org/EnviarItemOnLine" name="EnviarItemOnLine" bindingOperationName="EnviarItemOnLine" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f39d7c20-6539-4563-810f-20cad983f854" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://aws.chmasterdata.com/integracao/agropalma/intretorno/ServiceAstrein.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:EnviarItemOnLine>\r
+         <!--Optional:-->\r
+         <tem:dsItem>\r
+            <xs:schema>\r
+               <!--Ignoring type [{http://www.w3.org/2001/XMLSchema}schema]-->\r
+            </xs:schema>\r
+            <!--You may enter ANY elements at this point-->\r
+         </tem:dsItem>\r
+         <!--Optional:-->\r
+         <tem:usuario>?</tem:usuario>\r
+         <!--Optional:-->\r
+         <tem:senha>?</tem:senha>\r
+      </tem:EnviarItemOnLine>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/EnviarItemOnLine"/></con:call></con:operation><con:operation id="97cf2adb-322d-4081-9862-bfa75010087a" isOneWay="false" action="http://tempuri.org/Obsoletar" name="Obsoletar" bindingOperationName="Obsoletar" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d144ca76-4cf3-4eb6-affa-51324abc0829" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://aws.chmasterdata.com/integracao/agropalma/intretorno/ServiceAstrein.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:Obsoletar>\r
+         <!--Optional:-->\r
+         <tem:dsItem>\r
+            <xs:schema>\r
+               <!--Ignoring type [{http://www.w3.org/2001/XMLSchema}schema]-->\r
+            </xs:schema>\r
+            <!--You may enter ANY elements at this point-->\r
+         </tem:dsItem>\r
+         <!--Optional:-->\r
+         <tem:usuario>?</tem:usuario>\r
+         <!--Optional:-->\r
+         <tem:senha>?</tem:senha>\r
+         <!--Optional:-->\r
+         <tem:alias>?</tem:alias>\r
+      </tem:Obsoletar>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/Obsoletar"/></con:call></con:operation><con:operation id="7c0db310-e4ff-4b3f-838b-b1b0c82b540d" isOneWay="false" action="http://tempuri.org/ObterItemParaIntegracao" name="ObterItemParaIntegracao" bindingOperationName="ObterItemParaIntegracao" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="57ccfe50-e50d-4ffd-9072-de64989a3114" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://aws.chmasterdata.com/integracao/agropalma/intretorno/ServiceAstrein.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:ObterItemParaIntegracao>\r
+         <!--Optional:-->\r
+         <tem:usuario>USER_AGROPALMA</tem:usuario>\r
+         <!--Optional:-->\r
+         <tem:senha>4A!4E6@D38</tem:senha>\r
+         <tem:divisao>169</tem:divisao>\r
+      </tem:ObterItemParaIntegracao>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ObterItemParaIntegracao"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="361471e6-19d1-464f-9d61-0cb6f0d53d12" isOneWay="false" action="http://tempuri.org/RetornaIntegracaoProcessada" name="RetornaIntegracaoProcessada" bindingOperationName="RetornaIntegracaoProcessada" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ab371c03-14ea-45aa-90f6-117e0b6b9860" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://aws.chmasterdata.com/integracao/agropalma/intretorno/ServiceAstrein.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:RetornaIntegracaoProcessada>\r
+         <!--Optional:-->\r
+         <tem:usuario>?</tem:usuario>\r
+         <!--Optional:-->\r
+         <tem:senha>?</tem:senha>\r
+         <tem:divisao>?</tem:divisao>\r
+         <tem:idIntegracao>?</tem:idIntegracao>\r
+         <tem:statusIntegracao>?</tem:statusIntegracao>\r
+         <!--Optional:-->\r
+         <tem:mensagemErroIntegraco>?</tem:mensagemErroIntegraco>\r
+         <!--Optional:-->\r
+         <tem:codigoERP>?</tem:codigoERP>\r
+         <!--Optional:-->\r
+         <tem:idiomaIntegracaoErro>?</tem:idiomaIntegracaoErro>\r
+      </tem:RetornaIntegracaoProcessada>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/RetornaIntegracaoProcessada"/></con:call></con:operation><con:operation id="30d333b5-bdbb-421a-86a6-b96404e2b9c4" isOneWay="false" action="http://tempuri.org/RetornarAlias" name="RetornarAlias" bindingOperationName="RetornarAlias" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="2a17d90d-71d6-4dc4-b0d1-227a8f0b43be" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://aws.chmasterdata.com/integracao/agropalma/intretorno/ServiceAstrein.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:RetornarAlias/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/RetornarAlias"/></con:call></con:operation><con:operation id="43758084-8c39-436a-9e3f-67a3e4196ef4" isOneWay="false" action="http://tempuri.org/RetornoItemOnLine" name="RetornoItemOnLine" bindingOperationName="RetornoItemOnLine" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d02d3775-aae9-4b94-b0de-b96432700ae0" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://aws.chmasterdata.com/integracao/agropalma/intretorno/ServiceAstrein.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:RetornoItemOnLine>\r
+         <!--Optional:-->\r
+         <tem:dsItem>\r
+            <xs:schema>\r
+               <!--Ignoring type [{http://www.w3.org/2001/XMLSchema}schema]-->\r
+            </xs:schema>\r
+            <!--You may enter ANY elements at this point-->\r
+         </tem:dsItem>\r
+         <!--Optional:-->\r
+         <tem:usuario>?</tem:usuario>\r
+         <!--Optional:-->\r
+         <tem:senha>?</tem:senha>\r
+         <!--Optional:-->\r
+         <tem:alias>?</tem:alias>\r
+      </tem:RetornoItemOnLine>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/RetornoItemOnLine"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="27885524-b792-4054-8539-948a43835b87" wsaVersion="NONE" name="ServiceAstreinSoap12" type="wsdl" bindingName="{http://tempuri.org/}ServiceAstreinSoap12" soapVersion="1_2" anonymous="optional" definition="https://aws.chmasterdata.com/integracao/agropalma/intretorno/ServiceAstrein.asmx?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="https://aws.chmasterdata.com/integracao/agropalma/intretorno/ServiceAstrein.asmx?wsdl"><con:part><con:url>https://aws.chmasterdata.com/integracao/agropalma/intretorno/ServiceAstrein.asmx?wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Obsoletar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dsItem">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema"/>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="senha" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="alias" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObsoletarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObsoletarResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetornoItemOnLine">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dsItem">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema"/>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="senha" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="alias" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetornoItemOnLineResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RetornoItemOnLineResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EnviarItemOnLine">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dsItem">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema"/>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="senha" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EnviarItemOnLineResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EnviarItemOnLineResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EnviarItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dsItem">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema"/>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="senha" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EnviarItemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EnviarItemResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema"/>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetornarAlias">
+        <s:complexType/>
+      </s:element>
+      <s:element name="RetornarAliasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RetornarAliasResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema"/>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObterItemParaIntegracao">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="senha" type="s:string"/>
+            <s:element minOccurs="1" maxOccurs="1" name="divisao" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObterItemParaIntegracaoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObterItemParaIntegracaoResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetornaIntegracaoProcessada">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="senha" type="s:string"/>
+            <s:element minOccurs="1" maxOccurs="1" name="divisao" type="s:int"/>
+            <s:element minOccurs="1" maxOccurs="1" name="idIntegracao" type="s:int"/>
+            <s:element minOccurs="1" maxOccurs="1" name="statusIntegracao" type="s:int"/>
+            <s:element minOccurs="0" maxOccurs="1" name="mensagemErroIntegraco" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="codigoERP" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="idiomaIntegracaoErro" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetornaIntegracaoProcessadaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RetornaIntegracaoProcessadaResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ObsoletarSoapIn">
+    <wsdl:part name="parameters" element="tns:Obsoletar"/>
+  </wsdl:message>
+  <wsdl:message name="ObsoletarSoapOut">
+    <wsdl:part name="parameters" element="tns:ObsoletarResponse"/>
+  </wsdl:message>
+  <wsdl:message name="RetornoItemOnLineSoapIn">
+    <wsdl:part name="parameters" element="tns:RetornoItemOnLine"/>
+  </wsdl:message>
+  <wsdl:message name="RetornoItemOnLineSoapOut">
+    <wsdl:part name="parameters" element="tns:RetornoItemOnLineResponse"/>
+  </wsdl:message>
+  <wsdl:message name="EnviarItemOnLineSoapIn">
+    <wsdl:part name="parameters" element="tns:EnviarItemOnLine"/>
+  </wsdl:message>
+  <wsdl:message name="EnviarItemOnLineSoapOut">
+    <wsdl:part name="parameters" element="tns:EnviarItemOnLineResponse"/>
+  </wsdl:message>
+  <wsdl:message name="EnviarItemSoapIn">
+    <wsdl:part name="parameters" element="tns:EnviarItem"/>
+  </wsdl:message>
+  <wsdl:message name="EnviarItemSoapOut">
+    <wsdl:part name="parameters" element="tns:EnviarItemResponse"/>
+  </wsdl:message>
+  <wsdl:message name="RetornarAliasSoapIn">
+    <wsdl:part name="parameters" element="tns:RetornarAlias"/>
+  </wsdl:message>
+  <wsdl:message name="RetornarAliasSoapOut">
+    <wsdl:part name="parameters" element="tns:RetornarAliasResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ObterItemParaIntegracaoSoapIn">
+    <wsdl:part name="parameters" element="tns:ObterItemParaIntegracao"/>
+  </wsdl:message>
+  <wsdl:message name="ObterItemParaIntegracaoSoapOut">
+    <wsdl:part name="parameters" element="tns:ObterItemParaIntegracaoResponse"/>
+  </wsdl:message>
+  <wsdl:message name="RetornaIntegracaoProcessadaSoapIn">
+    <wsdl:part name="parameters" element="tns:RetornaIntegracaoProcessada"/>
+  </wsdl:message>
+  <wsdl:message name="RetornaIntegracaoProcessadaSoapOut">
+    <wsdl:part name="parameters" element="tns:RetornaIntegracaoProcessadaResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="ServiceAstreinSoap">
+    <wsdl:operation name="Obsoletar">
+      <wsdl:input message="tns:ObsoletarSoapIn"/>
+      <wsdl:output message="tns:ObsoletarSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="RetornoItemOnLine">
+      <wsdl:input message="tns:RetornoItemOnLineSoapIn"/>
+      <wsdl:output message="tns:RetornoItemOnLineSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="EnviarItemOnLine">
+      <wsdl:input message="tns:EnviarItemOnLineSoapIn"/>
+      <wsdl:output message="tns:EnviarItemOnLineSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="EnviarItem">
+      <wsdl:input message="tns:EnviarItemSoapIn"/>
+      <wsdl:output message="tns:EnviarItemSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="RetornarAlias">
+      <wsdl:input message="tns:RetornarAliasSoapIn"/>
+      <wsdl:output message="tns:RetornarAliasSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ObterItemParaIntegracao">
+      <wsdl:input message="tns:ObterItemParaIntegracaoSoapIn"/>
+      <wsdl:output message="tns:ObterItemParaIntegracaoSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="RetornaIntegracaoProcessada">
+      <wsdl:input message="tns:RetornaIntegracaoProcessadaSoapIn"/>
+      <wsdl:output message="tns:RetornaIntegracaoProcessadaSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceAstreinSoap" type="tns:ServiceAstreinSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Obsoletar">
+      <soap:operation soapAction="http://tempuri.org/Obsoletar" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetornoItemOnLine">
+      <soap:operation soapAction="http://tempuri.org/RetornoItemOnLine" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnviarItemOnLine">
+      <soap:operation soapAction="http://tempuri.org/EnviarItemOnLine" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnviarItem">
+      <soap:operation soapAction="http://tempuri.org/EnviarItem" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetornarAlias">
+      <soap:operation soapAction="http://tempuri.org/RetornarAlias" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObterItemParaIntegracao">
+      <soap:operation soapAction="http://tempuri.org/ObterItemParaIntegracao" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetornaIntegracaoProcessada">
+      <soap:operation soapAction="http://tempuri.org/RetornaIntegracaoProcessada" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceAstreinSoap12" type="tns:ServiceAstreinSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Obsoletar">
+      <soap12:operation soapAction="http://tempuri.org/Obsoletar" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetornoItemOnLine">
+      <soap12:operation soapAction="http://tempuri.org/RetornoItemOnLine" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnviarItemOnLine">
+      <soap12:operation soapAction="http://tempuri.org/EnviarItemOnLine" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnviarItem">
+      <soap12:operation soapAction="http://tempuri.org/EnviarItem" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetornarAlias">
+      <soap12:operation soapAction="http://tempuri.org/RetornarAlias" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObterItemParaIntegracao">
+      <soap12:operation soapAction="http://tempuri.org/ObterItemParaIntegracao" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetornaIntegracaoProcessada">
+      <soap12:operation soapAction="http://tempuri.org/RetornaIntegracaoProcessada" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceAstrein">
+    <wsdl:port name="ServiceAstreinSoap" binding="tns:ServiceAstreinSoap">
+      <soap:address location="https://aws.chmasterdata.com/integracao/agropalma/intretorno/ServiceAstrein.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="ServiceAstreinSoap12" binding="tns:ServiceAstreinSoap12">
+      <soap12:address location="https://aws.chmasterdata.com/integracao/agropalma/intretorno/ServiceAstrein.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://aws.chmasterdata.com/integracao/agropalma/intretorno/ServiceAstrein.asmx</con:endpoint></con:endpoints><con:operation id="abfd8717-9dd9-4a82-99bd-e75c996f9727" isOneWay="false" action="http://tempuri.org/EnviarItem" name="EnviarItem" bindingOperationName="EnviarItem" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1aa04b55-b761-466c-9517-cd8c08513828" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://aws.chmasterdata.com/integracao/agropalma/intretorno/ServiceAstrein.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:EnviarItem>\r
+         <!--Optional:-->\r
+         <tem:dsItem>\r
+            <xs:schema>\r
+               <!--Ignoring type [{http://www.w3.org/2001/XMLSchema}schema]-->\r
+            </xs:schema>\r
+            <!--You may enter ANY elements at this point-->\r
+         </tem:dsItem>\r
+         <!--Optional:-->\r
+         <tem:usuario>?</tem:usuario>\r
+         <!--Optional:-->\r
+         <tem:senha>?</tem:senha>\r
+      </tem:EnviarItem>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ServiceAstreinSoap/EnviarItemRequest"/></con:call></con:operation><con:operation id="45090e48-bef3-4aa8-a1d2-9975b6804767" isOneWay="false" action="http://tempuri.org/EnviarItemOnLine" name="EnviarItemOnLine" bindingOperationName="EnviarItemOnLine" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0a73665f-f6ef-4680-aaa6-f6f6a8e3ead9" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://aws.chmasterdata.com/integracao/agropalma/intretorno/ServiceAstrein.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:EnviarItemOnLine>\r
+         <!--Optional:-->\r
+         <tem:dsItem>\r
+            <xs:schema>\r
+               <!--Ignoring type [{http://www.w3.org/2001/XMLSchema}schema]-->\r
+            </xs:schema>\r
+            <!--You may enter ANY elements at this point-->\r
+         </tem:dsItem>\r
+         <!--Optional:-->\r
+         <tem:usuario>?</tem:usuario>\r
+         <!--Optional:-->\r
+         <tem:senha>?</tem:senha>\r
+      </tem:EnviarItemOnLine>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ServiceAstreinSoap/EnviarItemOnLineRequest"/></con:call></con:operation><con:operation id="4429c7e8-36d4-4de2-8c7e-88ff3391132e" isOneWay="false" action="http://tempuri.org/Obsoletar" name="Obsoletar" bindingOperationName="Obsoletar" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="52fc539f-7c73-4b8e-86b8-5e15400c4f04" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://aws.chmasterdata.com/integracao/agropalma/intretorno/ServiceAstrein.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:Obsoletar>\r
+         <!--Optional:-->\r
+         <tem:dsItem>\r
+            <xs:schema>\r
+               <!--Ignoring type [{http://www.w3.org/2001/XMLSchema}schema]-->\r
+            </xs:schema>\r
+            <!--You may enter ANY elements at this point-->\r
+         </tem:dsItem>\r
+         <!--Optional:-->\r
+         <tem:usuario>?</tem:usuario>\r
+         <!--Optional:-->\r
+         <tem:senha>?</tem:senha>\r
+         <!--Optional:-->\r
+         <tem:alias>?</tem:alias>\r
+      </tem:Obsoletar>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ServiceAstreinSoap/ObsoletarRequest"/></con:call></con:operation><con:operation id="c90fa8bf-47bb-44de-a3c8-f945a0536a61" isOneWay="false" action="http://tempuri.org/ObterItemParaIntegracao" name="ObterItemParaIntegracao" bindingOperationName="ObterItemParaIntegracao" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="bfa228da-9b06-4cb3-8921-53b8f9af185a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://aws.chmasterdata.com/integracao/agropalma/intretorno/ServiceAstrein.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:ObterItemParaIntegracao>\r
+         <!--Optional:-->\r
+         <tem:usuario>?</tem:usuario>\r
+         <!--Optional:-->\r
+         <tem:senha>?</tem:senha>\r
+         <tem:divisao>?</tem:divisao>\r
+      </tem:ObterItemParaIntegracao>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ServiceAstreinSoap/ObterItemParaIntegracaoRequest"/></con:call></con:operation><con:operation id="8617fb33-4348-4b21-aae7-f00cbfcef344" isOneWay="false" action="http://tempuri.org/RetornaIntegracaoProcessada" name="RetornaIntegracaoProcessada" bindingOperationName="RetornaIntegracaoProcessada" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0503ed2d-7a41-474a-b4c7-823cc603f6bc" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://aws.chmasterdata.com/integracao/agropalma/intretorno/ServiceAstrein.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:RetornaIntegracaoProcessada>\r
+         <!--Optional:-->\r
+         <tem:usuario>?</tem:usuario>\r
+         <!--Optional:-->\r
+         <tem:senha>?</tem:senha>\r
+         <tem:divisao>?</tem:divisao>\r
+         <tem:idIntegracao>?</tem:idIntegracao>\r
+         <tem:statusIntegracao>?</tem:statusIntegracao>\r
+         <!--Optional:-->\r
+         <tem:mensagemErroIntegraco>?</tem:mensagemErroIntegraco>\r
+         <!--Optional:-->\r
+         <tem:codigoERP>?</tem:codigoERP>\r
+         <!--Optional:-->\r
+         <tem:idiomaIntegracaoErro>?</tem:idiomaIntegracaoErro>\r
+      </tem:RetornaIntegracaoProcessada>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ServiceAstreinSoap/RetornaIntegracaoProcessadaRequest"/></con:call></con:operation><con:operation id="ad01739a-b578-46d1-83b7-036b0fbe4857" isOneWay="false" action="http://tempuri.org/RetornarAlias" name="RetornarAlias" bindingOperationName="RetornarAlias" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7efb7e2e-5041-4286-9bd6-0e7e86dc84f4" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://aws.chmasterdata.com/integracao/agropalma/intretorno/ServiceAstrein.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:RetornarAlias/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ServiceAstreinSoap/RetornarAliasRequest"/></con:call></con:operation><con:operation id="11c6c55f-fc34-4524-94ea-04ef36956fbb" isOneWay="false" action="http://tempuri.org/RetornoItemOnLine" name="RetornoItemOnLine" bindingOperationName="RetornoItemOnLine" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="64f63ef3-7231-4d1f-84aa-1582592ddd87" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://aws.chmasterdata.com/integracao/agropalma/intretorno/ServiceAstrein.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:RetornoItemOnLine>\r
+         <!--Optional:-->\r
+         <tem:dsItem>\r
+            <xs:schema>\r
+               <!--Ignoring type [{http://www.w3.org/2001/XMLSchema}schema]-->\r
+            </xs:schema>\r
+            <!--You may enter ANY elements at this point-->\r
+         </tem:dsItem>\r
+         <!--Optional:-->\r
+         <tem:usuario>?</tem:usuario>\r
+         <!--Optional:-->\r
+         <tem:senha>?</tem:senha>\r
+         <!--Optional:-->\r
+         <tem:alias>?</tem:alias>\r
+      </tem:RetornoItemOnLine>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ServiceAstreinSoap/RetornoItemOnLineRequest"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
